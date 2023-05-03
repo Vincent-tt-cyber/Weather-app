@@ -15,7 +15,7 @@ export const Days = () => {
     {
       day: "Сегодня",
       day_info: "28 авг",
-      icon_id: "sun",
+      icon_id: "mainly_cloudy",
       temp_day: "+18",
       temp_night: "+15",
       info: "Облачно",
