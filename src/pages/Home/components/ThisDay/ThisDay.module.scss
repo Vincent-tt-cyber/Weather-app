@@ -1,0 +1,54 @@
+@import "../../../../styles/variables.scss";
+
+.this__day {
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  background-color: $lite-backgoround;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  &-weekday {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+.top__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  svg {
+    width: 119px;
+    height: 119px;
+  }
+}
+
+.this__temp {
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 117px;
+  /* identical to box height */
+
+  color: $primary-color;
+}
+
+.bottom__block {
+  .this {
+    &__time {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      color: $light-gray;
+      margin: 0px 0px 14px 0px;
+    }
+    &__city {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 30px;
+      color: $light-gray;
+      margin: 0px 0px 14px 0px;
+    }
+  }
+}
