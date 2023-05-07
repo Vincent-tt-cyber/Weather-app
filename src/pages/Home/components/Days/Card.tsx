@@ -10,7 +10,7 @@ export const Card = ({ day }: ICardProps) => {
   return (
     <>
       <div className={s["card"]}>
-        <div className={s.day}>{day.day}</div>
+        <div className={s.name}>{day.day}</div>
         <div className={s.day__info}>{day.day_info}</div>
         <div className={s.img}>
           <GlobalSvgSelector id={day.icon_id} />
