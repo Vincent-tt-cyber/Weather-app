@@ -1,11 +1,32 @@
+import { FC } from "react";
+import s from "./Days.module.scss";
 
-interface Props = {};
-
-export const Tabs = (props: Props) => {
+export const Tabs = () => {
+  const tabs = [
+    {
+      value: "На неделю",
+    },
+    {
+      value: "На 10 дней",
+    },
+    {
+      value: "На месяц",
+    },
+  ];
   return (
     <>
-      <div>Tabs</div>
+      <div className={s.tabs}>
+        <div className={s["tabs__wrapper"]}>
+          {tabs.map((tab) => {
+            return (
+              <div key={tab.value} className={s["tab"]}>
+                {tab.value}
+              </div>
+            );
+          })}
+        </div>
+        <div className={s.cancel}>Отменить</div>
+      </div>
     </>
   );
 };
-

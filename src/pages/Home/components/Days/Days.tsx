@@ -1,5 +1,6 @@
 import { Card } from "./Card";
 import s from "./Days.module.scss";
+import { Tabs } from "./Tabs";
 
 export interface IDay {
   day: string;
@@ -72,9 +73,10 @@ export const Days = () => {
 
   return (
     <>
+      <Tabs />
       <div className={s["days"]}>
         {days.map((day: IDay) => (
-          <Card day={day} />
+          <Card key={day.day} day={day} />
         ))}
       </div>
     </>

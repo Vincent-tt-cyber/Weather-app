@@ -3,6 +3,7 @@ import s from "./Home.module.scss";
 import { ThisDay } from "./components/ThisDay/ThisDay";
 import { ThisDayInfo } from "./components/ThisDayInfo/ThisDayInfo";
 import { Days } from "./components/Days/Days";
+import Popup from "../../Components/Popup/Popup";
 
 interface Props {}
 
