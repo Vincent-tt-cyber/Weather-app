@@ -3,7 +3,7 @@ import App from "./App.tsx";
 import "./styles/index.scss";
 import { BrowserRouter } from "react-router-dom";
 
-// todo FIXME: https://youtu.be/wjx--n5X-QI?t=5862
+// todo FIXME: https://youtu.be/W4h_fOVo8xI?t=1030
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <BrowserRouter>
