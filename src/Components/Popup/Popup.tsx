@@ -33,6 +33,19 @@ const Popup = () => {
       <div className={s.blur}>
         <div className={s.popup}>
           <div className={s["this__day-info"]}>
+            <div className={s.day}>
+              <div className={s["day__temp"]}>12°</div>
+              <div className={s["day__name"]}>Среда</div>
+              <div className={s["day__img"]}>
+                <GlobalSvgSelector id="sun" />
+              </div>
+              <div className={s["day__time"]}>
+                Время: <span>01:54</span>
+              </div>
+              <div className={s["day__city"]}>
+                Город: <span>Санкт-Петербург</span>
+              </div>
+            </div>
             <div className={s["this__day-info-items"]}>
               {items.map((item: IItem) => {
                 return (

@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <div className="container">
-        <Popup />
+        {/* <Popup /> */}
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
