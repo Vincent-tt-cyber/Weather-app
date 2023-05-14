@@ -7,6 +7,7 @@
   background-color: var(#{--components-background-default});
   box-shadow: $box-shadow;
   border-radius: $border-radius;
+  margin: 0px 20px 0px 0px;
   &-weekday {
     font-weight: 400;
     font-size: 40px;
@@ -51,5 +52,38 @@
       color: $base-color;
       margin: 0px 0px 14px 0px;
     }
+  }
+}
+
+@media (max-width: 1240px) {
+  .this__day {
+    padding: 15px;
+  }
+
+  .this__temp {
+    font-size: 86px;
+  }
+
+  .this__day {
+    &-weekday {
+      font-size: 30px;
+      margin: 0px 0px 20px 0px;
+    }
+  }
+  .bottom__block {
+    .this {
+      &__time {
+        font-size: 20px;
+      }
+      &__city {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .this__day {
+    margin: 0px 0px 20px 0px;
   }
 }
